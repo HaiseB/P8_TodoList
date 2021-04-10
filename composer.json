@@ -5,11 +5,7 @@
     "autoload": {
         "psr-4": {
             "App\\": "src/"
-        },
-        "classmap": [
-            "app/AppKernel.php",
-            "app/AppCache.php"
-        ]
+        }
     },
     "autoload-dev": {
         "psr-4": {
@@ -48,6 +44,7 @@
         "twig/twig": "^1.0||^2.0"
     },
     "require-dev": {
+        "symfony/maker-bundle": "^1.30",
         "symfony/phpunit-bridge": "^4.0"
     },
     "config": {
@@ -71,12 +68,10 @@
             "assets:install %PUBLIC_DIR%": "symfony-cmd"
         },
         "post-install-cmd": [
-            "@auto-scripts",
-            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
+            "@auto-scripts"
         ],
         "post-update-cmd": [
-            "@auto-scripts",
-            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
+            "@auto-scripts"
         ]
     },
     "extra": {
