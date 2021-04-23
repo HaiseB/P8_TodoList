@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72c5b39b-7fa3-4546-9176-c9c3505b2167" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210401122915.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Controller/TaskTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/TaskTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +62,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/doctrine-bridge" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
-      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
@@ -93,7 +93,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/form" />
       <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
       <path value="$PROJECT_DIR$/vendor/symfony/intl" />
-      <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
       <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
@@ -114,6 +113,45 @@
       <path value="$PROJECT_DIR$/vendor/webimpress/safe-writer" />
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
     </include_path>
   </component>
   <component name="ProjectId" id="1pg1Z6zagw6v4PdeJIXv9145lS6" />
@@ -125,17 +163,28 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Controller" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\P8_TodoList\migrations" />
+      <recent name="C:\wamp64\www\P8_TodoList" />
+      <recent name="C:\wamp64\www\P8_TodoList\tests" />
+      <recent name="C:\wamp64\www\P8_TodoList\tests\Controller" />
       <recent name="C:\wamp64\www\P8_TodoList\public" />
-      <recent name="C:\wamp64\www\P8_TodoList\src\Entity" />
-      <recent name="C:\wamp64\www\P8_TodoList\src\Controller" />
-      <recent name="C:\wamp64\www\P8_TodoList\src" />
-      <recent name="C:\wamp64\www\P8_TodoList\templates" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\P8_TodoList\tests\Controller" />
+      <recent name="C:\wamp64\www\P8_TodoList" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml.dist" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -159,6 +208,12 @@
       <workItem from="1617295623773" duration="2492000" />
       <workItem from="1617347532036" duration="5517000" />
       <workItem from="1617354233290" duration="12468000" />
+      <workItem from="1618518485197" duration="1127000" />
+      <workItem from="1619072065530" duration="7814000" />
+      <workItem from="1619085989939" duration="329000" />
+      <workItem from="1619097437287" duration="2067000" />
+      <workItem from="1619105249985" duration="4249000" />
+      <workItem from="1619166637478" duration="3915000" />
     </task>
     <servers />
   </component>
@@ -178,10 +233,18 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="640" y="296" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.40.1920.1040/-1920.108.1536.824@0.40.1920.1040" timestamp="1616670606953" />
+    <state x="-49" y="51" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1619181057025">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="-49" y="51" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.40.1920.1040/-1920.108.1536.824@0.40.1920.1040" timestamp="1619181057025" />
     <state x="690" y="315" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617379433045">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="690" y="315" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.40.1920.1040/-1920.108.1536.824@0.40.1920.1040" timestamp="1617379433045" />
+    <state x="778" y="283" key="NewPhpClassDialog" timestamp="1619073313540">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="778" y="283" key="NewPhpClassDialog/0.40.1920.1040/-1920.108.1536.824@0.40.1920.1040" timestamp="1619073313540" />
     <state x="0" y="208" key="SettingsEditor" timestamp="1617269124369">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
@@ -194,6 +257,10 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="616" y="260" key="run.anything.popup/0.40.1920.1040/-1920.108.1536.824@0.40.1920.1040" timestamp="1617378538519" />
+    <state x="623" y="265" key="search.everywhere.popup" timestamp="1619080030670">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="623" y="265" key="search.everywhere.popup/0.40.1920.1040/-1920.108.1536.824@0.40.1920.1040" timestamp="1619080030670" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
