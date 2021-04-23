@@ -22,11 +22,11 @@ class TaskTest extends WebTestCase
         $securityTest = new SecurityTest();
         $client = $securityTest->testStandardLogin();
 
-        $crawler = $client->request('GET', '/tasks');
+        $client->request('GET', '/tasks');
         $this->assertResponseStatusCodeSame(Response::HTTP_OK);
     }
 
-    /*public function testCreateTaskAuthenticated()
+    public function testCreateTaskAuthenticated()
     {
         $securityTest = new SecurityTest();
         $client = $securityTest->testStandardLogin();
@@ -35,7 +35,7 @@ class TaskTest extends WebTestCase
 
         $this->assertResponseStatusCodeSame(Response::HTTP_OK);
         $this->assertSame(1, $crawler->filter('input[name="task[title]"]')->count());
-        $this->assertSame(1, $crawler->filter('input[name="task[content]"]')->count());
+        $this->assertSame(1, $crawler->filter('textarea[name="task[content]"]')->count());
         $this->assertSame(1, $crawler->selectButton('Ajouter')->count());
 
         $form = $crawler->selectButton('Ajouter')->form();
@@ -46,11 +46,15 @@ class TaskTest extends WebTestCase
         $crawler = $client->followRedirect();
 
         $this->assertResponseStatusCodeSame(Response::HTTP_OK);
-        $this->assertSame("Invalid credentials.", $crawler->filter('div.alert.alert-danger')->text());
-    }*/
+        $this->assertSame("Superbe ! La tâche a été bien été ajoutée.", $crawler->filter('div.alert.alert-success')->text());
+    }
 
-    /*public function testUpdateTaskAuthenticated()
+    public function testSeeCreatedTask()
     {
+        $securityTest = new SecurityTest();
+        $client = $securityTest->testStandardLogin();
 
-    }*/
+        $client->request('GET', '/tasks/14/edit');
+        $this->assertResponseStatusCodeSame(Response::HTTP_OK);
+    }
 }

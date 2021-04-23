@@ -11,7 +11,7 @@ class SecurityTest extends WebTestCase
     {
         $client = static::createClient();
 
-        $crawler = $client->request('GET', '/');
+        $client->request('GET', '/');
         $crawler = $client->followRedirect();
 
         $this->assertResponseStatusCodeSame(Response::HTTP_OK);
@@ -35,7 +35,7 @@ class SecurityTest extends WebTestCase
     {
         $client = static::createClient();
 
-        $crawler = $client->request('GET', '/');
+        $client->request('GET', '/');
         $crawler = $client->followRedirect();
 
         $this->assertResponseStatusCodeSame(Response::HTTP_OK);
