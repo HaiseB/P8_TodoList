@@ -13,6 +13,7 @@ Améliorez un projet existant - https://openclassrooms.com/projects/ameliorer-un
 4. [How to use](#How-to-use)
 5. [Build with](#Build-with)
 6. [Author](#Author)
+7. [For Developper](#For-Developper)
 
 ## Pre required
 You will need to install those on your server
@@ -34,8 +35,29 @@ _Run thoses commands_
 
 ## How to use
 
+Launch the server
+> symfony serve -d
+
 ## Build with
 - [Symfony 4](https://symfony.com/) - PHP framework
 
 ### Author
 * **Benjamin Haise** _alias_ [@HaiseB](https://github.com/HaiseB)
+
+### For Developper
+Several commande that can help you :)
+
+stop the symfony server
+> symfony serve:stop
+
+Launch blakfire
+> blackfire agent:start
+
+Create test database
+> php bin/console doctrine:database:create --env TEST
+
+Migrate migrations to test 
+> php bin/console doctrine:migrations:migrate --env TEST
+
+launch phpunit tests
+> .\vendor\bin\phpunit 
