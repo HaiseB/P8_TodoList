@@ -48,13 +48,4 @@ class TaskTest extends WebTestCase
         $this->assertResponseStatusCodeSame(Response::HTTP_OK);
         $this->assertSame("Superbe ! La tâche a été bien été ajoutée.", $crawler->filter('div.alert.alert-success')->text());
     }
-
-    public function testSeeCreatedTask()
-    {
-        $securityTest = new SecurityTest();
-        $client = $securityTest->testStandardLogin();
-
-        $client->request('GET', '/tasks/14/edit');
-        $this->assertResponseStatusCodeSame(Response::HTTP_OK);
-    }
 }

@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72c5b39b-7fa3-4546-9176-c9c3505b2167" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.test" beforeDir="false" afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210401122915.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/task/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/task/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Controller/SecurityTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/SecurityTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Controller/TaskTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/TaskTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,6 +150,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
       <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
       <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
     </include_path>
   </component>
   <component name="ProjectId" id="1pg1Z6zagw6v4PdeJIXv9145lS6" />
@@ -169,16 +168,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\P8_TodoList\tests\Controller" />
-      <recent name="C:\wamp64\www\P8_TodoList" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\P8_TodoList\migrations" />
       <recent name="C:\wamp64\www\P8_TodoList" />
       <recent name="C:\wamp64\www\P8_TodoList\tests" />
       <recent name="C:\wamp64\www\P8_TodoList\tests\Controller" />
       <recent name="C:\wamp64\www\P8_TodoList\public" />
-      <recent name="C:\wamp64\www\P8_TodoList\src\Entity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\P8_TodoList\tests\Controller" />
+      <recent name="C:\wamp64\www\P8_TodoList" />
     </key>
   </component>
   <component name="RunManager">
@@ -234,6 +233,10 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="640" y="296" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.40.1920.1040/-1920.108.1536.824@0.40.1920.1040" timestamp="1616670606953" />
+    <state x="-49" y="51" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1619181057025">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="-49" y="51" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.40.1920.1040/-1920.108.1536.824@0.40.1920.1040" timestamp="1619181057025" />
     <state x="690" y="315" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617379433045">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
