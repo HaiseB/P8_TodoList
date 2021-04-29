@@ -18,6 +18,7 @@
                     <th>Nom d'utilisateur</th>
                     <th>Adresse d'utilisateur</th>
                     <th>Actions</th>
+                    <th>Administrateur</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -29,6 +30,14 @@
                         <td>
                             <a href="{{ path('user_edit', {'id' : user.id}) }}" class="btn btn-success btn-sm">Edit</a>
                         </td>
+                        <td>
+                            {% if 'ROLE_ADMIN' in user.roles %}
+                                Oui
+                            {% else %}
+                                Non
+                            {% endif %}
+                        </td>
+
                     </tr>
                 {% endfor %}
                 </tbody>

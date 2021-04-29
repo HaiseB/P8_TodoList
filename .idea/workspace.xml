@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72c5b39b-7fa3-4546-9176-c9c3505b2167" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20210401122915.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Controller/TaskTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/TaskTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/list.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,6 +166,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Controller" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -214,6 +217,7 @@
       <workItem from="1619097437287" duration="2067000" />
       <workItem from="1619105249985" duration="4249000" />
       <workItem from="1619166637478" duration="3915000" />
+      <workItem from="1619684205039" duration="7907000" />
     </task>
     <servers />
   </component>
@@ -253,10 +257,10 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="485" y="214" width="1257" height="754" key="find.popup/0.40.1920.1040/-1920.108.1536.824@0.40.1920.1040" timestamp="1618068705518" />
-    <state x="616" y="260" key="run.anything.popup" timestamp="1617378538519">
+    <state x="616" y="260" key="run.anything.popup" timestamp="1619688749035">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="616" y="260" key="run.anything.popup/0.40.1920.1040/-1920.108.1536.824@0.40.1920.1040" timestamp="1617378538519" />
+    <state x="616" y="260" key="run.anything.popup/0.40.1920.1040/-1920.108.1536.824@0.40.1920.1040" timestamp="1619688749035" />
     <state x="623" y="265" key="search.everywhere.popup" timestamp="1619080030670">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
