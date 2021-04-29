@@ -14,7 +14,6 @@ class UserType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $user = $builder->getData();
         $isAdmin = in_array("ROLE_ADMIN", $builder->getData()->getRoles()) ? true : false;
 
         $builder
