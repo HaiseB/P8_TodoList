@@ -31,6 +31,12 @@ _Run thoses commands_
 - ``git clone https://github.com/HaiseB/P8_TodoList.git``
 - ``composer install``
 
+Create database
+- ``php bin/console doctrine:database:create``
+- ``php bin/console doctrine:migrations:migrate``
+Load fixtures
+- ``php bin/console hautelook:fixtures:load``
+
 ## Settings
 
 ## How to use
