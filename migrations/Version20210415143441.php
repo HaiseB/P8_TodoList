@@ -16,6 +16,8 @@ final class Version20210415143441 extends AbstractMigration
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
         $this->addSql('ALTER TABLE task ADD user_id INT NOT NULL');
+        $this->addSql("INSERT INTO user (`username`, `password`, `email`)
+            VALUES ('Anonyme','\$argon2id\$v=19\$m=65536,t=4,p=1\$M2JFZXZFbm5Oa1hnV3lidw\$AunH04B20t94bF0XvU5pWzDrvewKX3qMIwNDHGMK4RI','Anonyme@todolist.com')");
         $this->addSql("UPDATE task SET user_id=(SELECT id FROM user WHERE username = 'Anonyme')");
         $this->addSql('ALTER TABLE task ADD CONSTRAINT FK_527EDB25A76ED395 FOREIGN KEY (user_id) REFERENCES user (id)');
         $this->addSql('CREATE INDEX IDX_527EDB25A76ED395 ON task (user_id)');
