@@ -10,7 +10,7 @@ class UserTest extends WebTestCase
     public function testCreateAdminUserAuthenticated()
     {
         $securityTest = new SecurityTest();
-        $client = $securityTest->testStandardLogin();
+        $client = $securityTest->testAdministratorLogin();
 
         $crawler = $client->request('GET', '/users/create');
 
@@ -39,7 +39,7 @@ class UserTest extends WebTestCase
     public function testCreateStandartUserAuthenticated()
     {
         $securityTest = new SecurityTest();
-        $client = $securityTest->testStandardLogin();
+        $client = $securityTest->testAdministratorLogin();
 
         $crawler = $client->request('GET', '/users/create');
 
@@ -62,5 +62,32 @@ class UserTest extends WebTestCase
 
         $this->assertResponseStatusCodeSame(Response::HTTP_OK);
         $this->assertSame("Superbe ! L'utilisateur a bien été ajouté.", $crawler->filter('div.alert.alert-success')->text());
+    }
+
+    public function testCreateUserAuthenticatedAsStandardUser()
+    {
+        $securityTest = new SecurityTest();
+        $client = $securityTest->testStandardLogin();
+
+        $client->request('GET', '/users/create');
+        $this->assertResponseStatusCodeSame(Response::HTTP_FORBIDDEN);
+    }
+
+    public function testListUsersAuthenticated()
+    {
+        $securityTest = new SecurityTest();
+        $client = $securityTest->testAdministratorLogin();
+
+        $client->request('GET', '/users');
+        $this->assertResponseStatusCodeSame(Response::HTTP_OK);
+    }
+
+    public function testListUsersAuthenticatedAsStandardUser()
+    {
+        $securityTest = new SecurityTest();
+        $client = $securityTest->testStandardLogin();
+
+        $client->request('GET', '/users');
+        $this->assertResponseStatusCodeSame(Response::HTTP_FORBIDDEN);
     }
 }
