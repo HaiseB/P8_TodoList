@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72c5b39b-7fa3-4546-9176-c9c3505b2167" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20210401122915.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210429083255.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Controller/TaskTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/TaskTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixtures/task.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/fixtures/task.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixtures/user.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/fixtures/user.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210415143441.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20210415143441.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +155,11 @@
       <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
       <path value="$PROJECT_DIR$/vendor/symfony/mime" />
       <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/nelmio/alice" />
+      <path value="$PROJECT_DIR$/vendor/theofidry/alice-data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/hautelook/alice-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1pg1Z6zagw6v4PdeJIXv9145lS6" />
@@ -168,16 +176,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\P8_TodoList\migrations" />
-      <recent name="C:\wamp64\www\P8_TodoList" />
-      <recent name="C:\wamp64\www\P8_TodoList\tests" />
-      <recent name="C:\wamp64\www\P8_TodoList\tests\Controller" />
-      <recent name="C:\wamp64\www\P8_TodoList\public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\P8_TodoList\tests\Controller" />
       <recent name="C:\wamp64\www\P8_TodoList" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\P8_TodoList\migrations" />
+      <recent name="C:\wamp64\www\P8_TodoList\fixtures" />
+      <recent name="C:\wamp64\www\P8_TodoList" />
+      <recent name="C:\wamp64\www\P8_TodoList\tests" />
+      <recent name="C:\wamp64\www\P8_TodoList\tests\Controller" />
     </key>
   </component>
   <component name="RunManager">
@@ -214,6 +222,7 @@
       <workItem from="1619097437287" duration="2067000" />
       <workItem from="1619105249985" duration="4249000" />
       <workItem from="1619166637478" duration="3915000" />
+      <workItem from="1619768763976" duration="5054000" />
     </task>
     <servers />
   </component>
@@ -261,16 +270,5 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="623" y="265" key="search.everywhere.popup/0.40.1920.1040/-1920.108.1536.824@0.40.1920.1040" timestamp="1619080030670" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/Entity/Task.php</url>
-          <line>29</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

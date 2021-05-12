@@ -1,0 +1,6 @@
+App\Entity\Task:
+  task_{1..50}:
+    user: '@user_*'
+    createdAt: <dateTimeThisYear()>
+    title: <word(2)>
+    content: <text(20)>
