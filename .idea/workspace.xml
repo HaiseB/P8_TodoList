@@ -172,6 +172,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Controller" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -186,6 +187,7 @@
       <recent name="C:\wamp64\www\P8_TodoList" />
       <recent name="C:\wamp64\www\P8_TodoList\tests" />
       <recent name="C:\wamp64\www\P8_TodoList\tests\Controller" />
+      <recent name="C:\wamp64\www\P8_TodoList\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -258,14 +260,18 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="0" y="208" key="SettingsEditor/0.40.1920.1040/-1920.108.1536.824@0.40.1920.1040" timestamp="1617269124369" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1619698363629">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.40.1920.1040/-1920.108.1536.824@0.40.1920.1040" timestamp="1619698363629" />
     <state x="485" y="214" width="1257" height="754" key="find.popup" timestamp="1618068705518">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="485" y="214" width="1257" height="754" key="find.popup/0.40.1920.1040/-1920.108.1536.824@0.40.1920.1040" timestamp="1618068705518" />
-    <state x="616" y="260" key="run.anything.popup" timestamp="1617378538519">
+    <state x="616" y="260" key="run.anything.popup" timestamp="1619688749035">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="616" y="260" key="run.anything.popup/0.40.1920.1040/-1920.108.1536.824@0.40.1920.1040" timestamp="1617378538519" />
+    <state x="616" y="260" key="run.anything.popup/0.40.1920.1040/-1920.108.1536.824@0.40.1920.1040" timestamp="1619688749035" />
     <state x="623" y="265" key="search.everywhere.popup" timestamp="1619080030670">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
