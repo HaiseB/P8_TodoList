@@ -45,8 +45,34 @@ class SecurityTest extends WebTestCase
         $this->assertSame(1, $crawler->selectButton('Se connecter')->count());
 
         $form = $crawler->selectButton('Se connecter')->form();
-        $form['_username'] = 'Benjamin';
-        $form['_password'] = 'a';
+        $form['_username'] = 'et';
+        $form['_password'] = 'demodemo';
+        $client->submit($form);
+
+        $crawler = $client->followRedirect();
+
+        $this->assertResponseStatusCodeSame(Response::HTTP_OK);
+        $this->assertSame("Bienvenue sur Todo List, l'application vous permettant de gérer l'ensemble de vos tâches sans effort !", $crawler->filter('h1')->text());
+
+        return $client;
+    }
+
+    public function testAdministratorLogin()
+    {
+        $client = static::createClient();
+
+        $client->request('GET', '/');
+        $crawler = $client->followRedirect();
+
+        $this->assertResponseStatusCodeSame(Response::HTTP_OK);
+
+        $this->assertSame(1, $crawler->filter('input[name="_username"]')->count());
+        $this->assertSame(1, $crawler->filter('input[name="_password"]')->count());
+        $this->assertSame(1, $crawler->selectButton('Se connecter')->count());
+
+        $form = $crawler->selectButton('Se connecter')->form();
+        $form['_username'] = 'admin et';
+        $form['_password'] = 'demodemo';
         $client->submit($form);
 
         $crawler = $client->followRedirect();
