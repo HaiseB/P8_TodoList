@@ -65,5 +65,7 @@ Create test database
 Migrate migrations to test 
 > php bin/console doctrine:migrations:migrate --env TEST
 
-launch phpunit tests
-> .\vendor\bin\phpunit 
+launch phpunit tests + export code coverage
+> .\vendor\bin\phpunit --coverage-html tests/Coverage
+
+
