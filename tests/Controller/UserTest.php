@@ -7,7 +7,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class UserTest extends WebTestCase
 {
-    public function testCreateAdminUserAuthenticated()
+    public function testCreateAdminUserAdminAuthenticated()
     {
         $securityTest = new SecurityTest();
         $client = $securityTest->testAdministratorLogin();
@@ -36,7 +36,7 @@ class UserTest extends WebTestCase
         $this->assertSame("Superbe ! L'utilisateur a bien été ajouté.", $crawler->filter('div.alert.alert-success')->text());
     }
 
-    public function testCreateStandartUserAuthenticated()
+    public function testCreateStandardUserAdminAuthenticated()
     {
         $securityTest = new SecurityTest();
         $client = $securityTest->testAdministratorLogin();
@@ -89,5 +89,33 @@ class UserTest extends WebTestCase
 
         $client->request('GET', '/users');
         $this->assertResponseStatusCodeSame(Response::HTTP_FORBIDDEN);
+    }
+
+    public function testEditUserAdminAuthenticated()
+    {
+        $securityTest = new SecurityTest();
+        $client = $securityTest->testAdministratorLogin();
+
+        $crawler = $client->request('GET', '/users/7/edit');
+
+        $this->assertResponseStatusCodeSame(Response::HTTP_OK);
+        $this->assertSame(1, $crawler->filter('input[name="user[username]"]')->count());
+        $this->assertSame(1, $crawler->filter('input[name="user[password][first]"]')->count());
+        $this->assertSame(1, $crawler->filter('input[name="user[password][second]"]')->count());
+        $this->assertSame(1, $crawler->filter('input[name="user[email]"]')->count());
+        $this->assertSame(1, $crawler->filter('input[name="user[isAdmin]"]')->count());
+        $this->assertSame(1, $crawler->selectButton('Modifier')->count());
+
+        $form = $crawler->selectButton('Modifier')->form();
+        $form['user[username]'] = 'Nouveau nom';
+        $form['user[password][first]'] = 'newPassword';
+        $form['user[password][second]'] = 'newPassword';
+        $form['user[email]'] = "edituser@todolist.fr";
+        $client->submit($form);
+
+        $crawler = $client->followRedirect();
+
+        $this->assertResponseStatusCodeSame(Response::HTTP_OK);
+        $this->assertSame("Superbe ! L'utilisateur a bien été modifié", $crawler->filter('div.alert.alert-success')->text());
     }
 }
