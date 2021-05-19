@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="72c5b39b-7fa3-4546-9176-c9c3505b2167" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Controller/SecurityTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/SecurityTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Controller/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/UserTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TaskController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/task/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/task/list.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

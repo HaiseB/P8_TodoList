@@ -48,22 +48,28 @@ class TaskController extends AbstractController
      */
     public function editAction(Task $task, Request $request)
     {
-        $form = $this->createForm(TaskType::class, $task);
+        if (($task->getUser()->getUsername() === 'Anonyme' && $this->isGranted('ROLE_ADMIN')) || $this->getUser() === $task->getUser()) {
+            $form = $this->createForm(TaskType::class, $task);
 
-        $form->handleRequest($request);
+            $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $this->getDoctrine()->getManager()->flush();
+            if ($form->isSubmitted() && $form->isValid()) {
+                $this->getDoctrine()->getManager()->flush();
 
-            $this->addFlash('success', 'La tâche a bien été modifiée.');
+                $this->addFlash('success', 'La tâche a bien été modifiée.');
+
+                return $this->redirectToRoute('task_list');
+            }
+
+            return $this->render('task/edit.html.twig', [
+                'form' => $form->createView(),
+                'task' => $task,
+            ]);
+        } else {
+            $this->addFlash('error', "Modification impossible, cette tâche ne vous appartiens pas.");
 
             return $this->redirectToRoute('task_list');
         }
-
-        return $this->render('task/edit.html.twig', [
-            'form' => $form->createView(),
-            'task' => $task,
-        ]);
     }
 
     /**
@@ -84,12 +90,18 @@ class TaskController extends AbstractController
      */
     public function deleteTaskAction(Task $task)
     {
-        $em = $this->getDoctrine()->getManager();
-        $em->remove($task);
-        $em->flush();
+        if (($task->getUser()->getUsername() === 'Anonyme' && $this->isGranted('ROLE_ADMIN')) || $this->getUser() === $task->getUser()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->remove($task);
+            $em->flush();
 
-        $this->addFlash('success', 'La tâche a bien été supprimée.');
+            $this->addFlash('success', 'La tâche a bien été supprimée.');
 
-        return $this->redirectToRoute('task_list');
+            return $this->redirectToRoute('task_list');
+        } else {
+            $this->addFlash('error', "Échec de la suppression, cette tâche ne vous appartiens pas.");
+
+            return $this->redirectToRoute('task_list');
+        }
     }
 }
