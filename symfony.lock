@@ -128,6 +128,15 @@
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
+    "laminas/laminas-code": {
+        "version": "4.2.0"
+    },
+    "laminas/laminas-eventmanager": {
+        "version": "3.3.1"
+    },
+    "laminas/laminas-zendframework-bridge": {
+        "version": "1.2.0"
+    },
     "monolog/monolog": {
         "version": "1.26.0"
     },
@@ -320,6 +329,9 @@
     },
     "symfony/dependency-injection": {
         "version": "v4.4.21"
+    },
+    "symfony/deprecation-contracts": {
+        "version": "v2.4.0"
     },
     "symfony/doctrine-bridge": {
         "version": "v4.4.21"
@@ -611,6 +623,9 @@
     },
     "twig/twig": {
         "version": "v2.13.1"
+    },
+    "webimpress/safe-writer": {
+        "version": "2.2.0"
     },
     "webmozart/assert": {
         "version": "1.10.0"
