@@ -17,7 +17,7 @@ Améliorez un projet existant - https://openclassrooms.com/projects/ameliorer-un
 
 ## Pre required
 You will need to install those on your server
-- *PHP* (>= 7.4)
+- *PHP* (>= 7.4.9)
 - *Apache* (>= 2.4)
 - *MySQL* (>= 5.7)
 - *Composer* (>= 2.0)
