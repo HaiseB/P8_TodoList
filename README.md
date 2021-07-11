@@ -13,7 +13,7 @@ Améliorez un projet existant - https://openclassrooms.com/projects/ameliorer-un
 4. [How to use](#How-to-use)
 5. [Build with](#Build-with)
 6. [Author](#Author)
-7. [For Developper](#For-Developper)
+7. [Others commands](#Others-commands)
 
 ## Pre required
 You will need to install those on your server
@@ -51,7 +51,7 @@ Launch the server
 ### Author
 * **Benjamin Haise** _alias_ [@HaiseB](https://github.com/HaiseB)
 
-### For Developper
+### Others commands
 Several commande that can help you :)
 
 stop the symfony server
