@@ -31,6 +31,8 @@ _Run thoses commands_
 - ``git clone https://github.com/HaiseB/P8_TodoList.git``
 - ``composer update``
 
+- edit the .env infos
+
 Create database
 - ``php bin/console doctrine:database:create``
 - ``php bin/console doctrine:migrations:migrate``
