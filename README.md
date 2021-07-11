@@ -29,7 +29,7 @@ You will need to install those on your server
 _Run thoses commands_
 
 - ``git clone https://github.com/HaiseB/P8_TodoList.git``
-- ``composer install``
+- ``composer update``
 
 Create database
 - ``php bin/console doctrine:database:create``
