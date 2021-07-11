@@ -45,6 +45,10 @@ Load fixtures
 Launch the server
 > symfony serve -d
 
+IF you have load fixture
+> login : admin vero
+> password : demodemo
+
 ## Build with
 - [Symfony 4](https://symfony.com/) - PHP framework
 
